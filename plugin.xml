@@ -39,7 +39,8 @@
         </intent-filter>
       </receiver>
     </config-file>
-    <framework src="com.google.firebase:firebase-analytics:15.0.0"/>
+    <preference name="FA_VERSION" default="15.0.0"/>
+    <framework src="com.google.firebase:firebase-analytics:$FA_VERSION"/>
     <source-file src="src/android/GAPlugin.java" target-dir="src/com/appfeel/cordova/analytics" />
   </platform>
   
